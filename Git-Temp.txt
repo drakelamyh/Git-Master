@@ -1,0 +1,224 @@
+********** Git Guide **********
+
+Note that github max space is 100MB per file.
+
+
+
+git help 
+- see help details
+
+git add .
+- Add all file contents to the index
+
+git commit -m "Edited 31 Jan 2021 added new URL"
+- Record changes to the repository with comments
+
+git config --global user.name "drakelamyh"
+- set username
+
+git config --global user.email "owiecookie+coding@gmail.com"
+- set email
+
+git branch
+- check which branch are you in. If you are pushing into the main branch, make sure it shows as * main
+
+git push origin main
+- push files into main branch
+
+
+
+
+
+
+... Copy old repo and push edits into Github (using Command Prompt) *** USE THIS
+
+git clone https://github.com/drakelamyh/Python_TicTacToe.git
+- Clone a repository in Github into a new directory (folder) in your computer
+
+cd Python_TicTacToe
+- CMD command. Make sure your working directory is the repo folder.
+
+git add tictactoe.py
+- indicate the file that is amended and needs to be uploaded
+
+git commit -m "20210513 Moved the clear output function into the print board function"
+- record changes to the repository with comments
+
+git branch
+- check which branch are you in. If you are pushing into the main branch, make sure it shows as * main
+
+git push origin main
+git push origin master
+- push files into main branch. Git will authenticate with browser to make sure you have password to the Github account.
+- if your main branch is named "master", you need to use the other command.
+
+
+
+
+#### Create a new repository on the command line
+
+Note: need to create a blank repo in Github.com first
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/drakelamyh/R-passgen.git
+git push -u origin main
+
+
+
+
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/drakelamyh/R-passgen.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== From Coursera ===
+
+
+Example of procedure to work with:
+
+
+git config --global user.name
+git config --global user.email
+cd Desktop/
+git clone https://github.com/drakecoursea/mini-projects.git
+cd mini-projects/
+git add .
+# go edit whatever files you want to add in
+git add .
+git status
+# each time you edit, repeat git add . and git status
+git commit -m "added random password generator"
+git push
+
+
+
+
+----- Initial account setup -----
+
+
+git config --global user.name "Drake Coursera"
+# to configure user.name
+
+git config --global user.email "fireblast1135-coursera@yahoo.com.sg"
+
+git config --list
+# check if user.name and user.email is configured correctly
+
+git config --global user.name
+# print out user.name
+
+git config --global user.email
+# print out user.email
+
+exit
+# To logout
+
+
+----- Creating a Github Repository -----
+
+
+# make new directory
+mkdir ~/test-repo
+
+# Print working directory
+pwd
+
+# Change working directory
+cd ~/test-repo
+
+xxx ~/test-repo
+git init
+# Initialized empty Git repository in C:/Users/Lam/test-repo/.git/
+
+xxx ~/test-repo (master)
+git remote add origin https://github.com/drakecoursea/test-repo.git
+# 
+
+
+xxx ~/test-repo (master)
+git clone https://github.com/yourUserNameHere/repoNamehere.git
+# for ‘cloning of other people’s repo’ or to clone your own repo already online
+
+
+----- Adding new files to index -----
+
+
+# Before adding new files ensure that working directory is at the relevant git folder and not at the default directory or the desktop.
+
+# Adds all new files (so that Git Bash knows you planning to commit them online later)
+git add .
+
+# updates tracking for files that changed names or were deleted
+git add -u
+
+# does both of the previous
+git add -A
+
+# Add single file in directory for committing
+$ git add cachematrix.R
+
+# Obtain a summary of which files have changes that are staged for the next commit
+$ git status
+
+
+----- Commit files to local repo -----
+
+# for changes you want to commit to be saved as intermediate version
+# update local repo, not remote repo, can type custom message
+git commit -m “message”
+
+
+
+----- Pushing -----
+
+# update local commits (Git Bash) on remote (Github)
+# usually for same branch to same branch
+git push
+
+# explicit pushing from original branch ‘origin’ to new branch ‘amend-my-name’
+git push origin amend-my-name
+
+
+
+----- Branching -----
+
+# to create branch to work on version used by many people to prevent interfering
+# branchname cannot have space in between
+git checkout -b branchname
+
+# see what branch you are on
+git branch
+
+# to return back to master branch
+git checkout master
+
+
+
+
+
