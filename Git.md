@@ -4,17 +4,17 @@
 
 ## Copy old repo from Github and push edits back into Github
 
-Use Command Prompt (search for CMD)
+Open up Command Prompt (search for CMD).
 
-To navigate to desired folder to copy repo to
+To navigate to desired folder to clone repo to, use the CMD command:
 
-`cd Desktop`
+- `cd Desktop`
 
-Clone repo in Github into a new folder on computer
+Clone repo in Github into a new folder on computer at desired folder location:
 
 `git clone https://github.com/drakelamyh/AlphaBravo.git`
 
-CMD command to navigate to repo folder
+CMD command to navigate to new repo folder cloned:
 
 `cd AlphaBravo`
 
@@ -38,7 +38,7 @@ Push files into * main branch. Git will authenticate with browser to make sure y
 
 `git push origin main`
 
-Use this command instead of main branch is named as * master instead.
+Use this command instead if top branch is named as * master instead.
 
 `git push origin master`
 
