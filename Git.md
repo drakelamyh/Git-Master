@@ -8,7 +8,7 @@ Open up Command Prompt (search for CMD).
 
 To navigate to desired folder to clone repo to, use the CMD command:
 
-- `cd Desktop`
+`cd Desktop`
 
 Clone repo in Github into a new folder on computer at desired folder location:
 
